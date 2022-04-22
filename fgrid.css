@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    /* padding: 0px; */
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+img{
+    width: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* Background */
+.ele1{
+    position: relative;
+}
+.ele1::before{
+    content: "";
+    background-color: rgb(255, 225, 248);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;  
+}
+.bg{
+    position: relative;
+}
+.ele2{
+    position: relative;
+}
+.bg::before{
+    content: "";
+    background: url(fdbg.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;  
+}
+.ele3{
+    position: relative;
+}
+
+.ele4{
+    position: relative;
+}
+
+.ele5{
+    position: relative;
+}
+
+.ele6{
+    position: relative;
+    color: aliceblue;
+}
+.ele6::before{
+    content: "";
+    background-color: rgb(0, 15, 15);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;  
+}
+/* Navigation Bar */
+.nav{
+    display: flex;
+    height: 80px;
+    padding: 10px;
+    font-weight: bolder;
+}
+.navli{
+    list-style: none;
+    display: flex;
+    font-size: 1.32rem;
+
+    justify-content: center;
+    align-items: center;
+}
+.la{
+    margin: 4rem;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.la:hover{
+    font-size: 1.4rem;
+    background-color: rgb(242, 143, 237);
+    color: rgb(43, 6, 6);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+.lpic{
+    height: 75px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.lpic:hover{
+    border: 2px solid salmon;
+    height: 80px;
+}
+
+/* Welcome */
+
+.ele2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.ele2 h3{
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+.ele2 p{
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 10px;
+    max-width: 1000px;
+}
+.ele2 button{
+    width: 15%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(247, 14, 192);
+    background-color: rgb(245, 202, 247);
+    padding: 3px ;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    transition-property: all;
+    transition-duration: .5s;
+    min-width: 100px;
+}
+.ele2 button:hover{
+    font-size: 1.4rem;
+    background-color: rgb(255, 184, 250);
+    color: rgb(14, 8, 0);
+    /* font-weight: bold; */
+    border: 2px solid rgb(104, 104, 243);
+}
+
+/* Our Services */
+.ele3{
+    align-items: center;
+    justify-content: center;
+}
+.ele3 h3{
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 10px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+}
+.box img{
+    margin: 10px;
+}
+.box1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 25, 0);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: .5s;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.box3{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 25, 0);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: .5s;
+    font-size: 1.2rem;
+}
+.box3 h4{
+    max-width: 200px;
+
+}
+.box2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 25, 0);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: .5s;
+    font-size: 1.2rem;
+}
+.box1:hover,.box2:hover,.box3:hover{
+    font-size: 1.4rem;
+    color: rgb(1, 1, 94);
+}
+
+/* Achievement */
+.ele4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our{
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 8px;
+}
+.achieve{
+    display: flex;
+}
+.bx{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid rgb(255, 25, 0);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition-property: all;
+    transition-duration: .5s;
+}
+.bx img{
+    margin: 10px;
+}
+.bx:hover{
+    font-size: 1.7rem;
+}
+
+/* Contact */
+.ele5 h3{
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 7px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px;
+    margin: 7px;
+}
+.form input{
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid salmon;
+    max-width: 500px;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+}
